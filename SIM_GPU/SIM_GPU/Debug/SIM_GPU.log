@@ -1,0 +1,214 @@
+﻿Build started 7/8/2016 7:47:11 AM.
+     1>Project "C:\ROSEF\MILSET_SIM_GPU\SIM_GPU\SIM_GPU\SIM_GPU.vcxproj" on node 2 (Build target(s)).
+     1>AddCudaCompileDeps:
+         C:\Microsoft Visual Studio 12.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_DEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I. /FIcuda_runtime.h /c C:\ROSEF\MILSET_SIM_GPU\SIM_GPU\SIM_GPU\kernel.cu 
+       CudaBuild:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\Vlad\AppData\Local\Temp\tmp2ff4f9de4a5d4e7a9d4f57c774e79507.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Microsoft Visual Studio 12.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o Debug\kernel.cu.obj "C:\ROSEF\MILSET_SIM_GPU\SIM_GPU\SIM_GPU\kernel.cu"
+         
+         C:\ROSEF\MILSET_SIM_GPU\SIM_GPU\SIM_GPU>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Microsoft Visual Studio 12.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o Debug\kernel.cu.obj "C:\ROSEF\MILSET_SIM_GPU\SIM_GPU\SIM_GPU\kernel.cu" 
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(59): warning : variable "z" was declared but never referenced
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(62): warning : calling a __host__ function from a __host__ __device__ function is not allowed
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(71): warning : calling a __host__ function from a __host__ __device__ function is not allowed
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(80): warning : calling a __host__ function from a __host__ __device__ function is not allowed
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(81): warning : calling a __host__ function from a __host__ __device__ function is not allowed
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(62) (col. 15) : warning : calling a __host__ function("sqrt") from a __host__ __device__ function("functor::operator ()") is not allowed
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(71) (col. 12) : warning : calling a __host__ function("tan") from a __host__ __device__ function("functor::operator ()") is not allowed
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(80): warning : calling a __host__ function("cos") from a __host__ __device__ function("functor::operator ()") is not allowed
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(81): warning : calling a __host__ function("sin") from a __host__ __device__ function("functor::operator ()") is not allowed
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(59): warning : variable "z" was declared but never referenced
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(19): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(19): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(19): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(49): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(51): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(52): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(53): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(54): warning : 'long double' is treated as 'double' in device code
+     1>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include\thrust/detail/tuple.inl(494): warning : 'long double' is treated as 'double' in device code
+     1>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include\thrust/detail/tuple.inl(659): warning : 'long double' is treated as 'double' in device code
+     1>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include\thrust/detail/tuple.inl(659): warning : 'long double' is treated as 'double' in device code
+     1>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include\thrust/detail/tuple.inl(659): warning : 'long double' is treated as 'double' in device code
+     1>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include\thrust/detail/tuple.inl(659): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(57): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(58): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(59): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(60): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(62): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(57): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(58): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(59): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(60): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(62): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(64): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(66): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(69): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(70): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(72): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(68): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(72): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(83): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(68): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(71): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(71): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(72): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(74): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(77): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(80): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(80): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(81): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(81): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(83): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(83): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(85): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(85): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(85): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(85): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(85): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(85): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(85): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(85): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(85): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(85): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(85): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(97): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(93): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(93): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(94): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(94): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(94): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(94): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(99): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(101): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(110): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(111): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(113): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(111): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(114): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(115): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(116): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(118): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(120): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(120): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(120): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(120): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(120): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(120): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(120): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(120): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(120): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(120): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(120): warning : 'long double' is treated as 'double' in device code
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(120): warning : 'long double' is treated as 'double' in device code
+     1>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include\thrust/detail/tuple.inl(659): warning : 'long double' is treated as 'double' in device code
+     1>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include\thrust/detail/tuple.inl(659): warning : 'long double' is treated as 'double' in device code
+     1>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include\thrust/detail/tuple.inl(659): warning : 'long double' is treated as 'double' in device code
+     1>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include\thrust/detail/tuple.inl(659): warning : 'long double' is treated as 'double' in device code
+         kernel.cu
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(146): warning C4018: '<' : signed/unsigned mismatch
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(154): warning C4018: '<' : signed/unsigned mismatch
+     1>C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(162): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include\thrust/iterator/iterator_adaptor.h(203): warning C4244: '+=' : conversion from '__int64' to 'unsigned int', possible loss of data
+                 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include\thrust/iterator/iterator_adaptor.h(201) : while compiling class template member function 'void thrust::iterator_adaptor<thrust::counting_iterator<unsigned int,thrust::use_default,thrust::use_default,thrust::use_default>,Incrementable,Incrementable,thrust::any_system_tag,thrust::random_access_traversal_tag,Incrementable,__int64>::advance(__int64)'
+                 with
+                 [
+                     Incrementable=unsigned int
+                 ]
+                 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include\thrust/iterator/iterator_facade.h(171) : see reference to function template instantiation 'void thrust::iterator_adaptor<thrust::counting_iterator<unsigned int,thrust::use_default,thrust::use_default,thrust::use_default>,Incrementable,Incrementable,thrust::any_system_tag,thrust::random_access_traversal_tag,Incrementable,__int64>::advance(__int64)' being compiled
+                 with
+                 [
+                     Incrementable=unsigned int
+                 ]
+                 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include\thrust/iterator/counting_iterator.h(132) : see reference to class template instantiation 'thrust::iterator_adaptor<thrust::counting_iterator<unsigned int,thrust::use_default,thrust::use_default,thrust::use_default>,Incrementable,Incrementable,thrust::any_system_tag,thrust::random_access_traversal_tag,Incrementable,__int64>' being compiled
+                 with
+                 [
+                     Incrementable=unsigned int
+                 ]
+                 C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(139) : see reference to class template instantiation 'thrust::counting_iterator<unsigned int,thrust::use_default,thrust::use_default,thrust::use_default>' being compiled
+     1>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include\thrust/system/cuda/detail/for_each.inl(136): warning C4244: 'argument' : conversion from '__int64' to 'size_t', possible loss of data
+     1>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include\thrust/iterator/detail/zip_iterator_base.h(50): warning C4244: 'argument' : conversion from 'const __int64' to 'int', possible loss of data
+                 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include\thrust/iterator/detail/zip_iterator_base.h(199) : see reference to function template instantiation 'void thrust::detail::advance_iterator<__int64>::operator ()<T>(Iterator &) const' being compiled
+                 with
+                 [
+                     T=thrust::detail::normal_iterator<thrust::device_ptr<thrust::tuple<double,double,double,double,double,double,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>>
+         ,            Iterator=thrust::detail::normal_iterator<thrust::device_ptr<thrust::tuple<double,double,double,double,double,double,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>>
+                 ]
+                 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include\thrust/iterator/detail/zip_iterator_base.h(199) : see reference to function template instantiation 'void thrust::detail::advance_iterator<__int64>::operator ()<T>(Iterator &) const' being compiled
+                 with
+                 [
+                     T=thrust::detail::normal_iterator<thrust::device_ptr<thrust::tuple<double,double,double,double,double,double,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>>
+         ,            Iterator=thrust::detail::normal_iterator<thrust::device_ptr<thrust::tuple<double,double,double,double,double,double,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>>
+                 ]
+                 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include\thrust/iterator/detail/zip_iterator_base.h(200) : see reference to function template instantiation 'Fun thrust::detail::tuple_impl_specific::tuple_for_each<T,Fun>(Tuple &,Fun)' being compiled
+                 with
+                 [
+                     Fun=thrust::detail::advance_iterator<__int64>
+         ,            T=thrust::detail::cons<thrust::detail::normal_iterator<thrust::device_ptr<thrust::tuple<double,double,double,double,double,double,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>>,thrust::detail::map_tuple_to_cons<thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>::type>
+         ,            Tuple=thrust::detail::cons<thrust::detail::normal_iterator<thrust::device_ptr<thrust::tuple<double,double,double,double,double,double,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>>,thrust::detail::map_tuple_to_cons<thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>::type>
+                 ]
+                 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include\thrust/iterator/detail/zip_iterator.inl(95) : see reference to function template instantiation 'Fun thrust::detail::tuple_impl_specific::tuple_for_each<IteratorTuple,thrust::detail::advance_iterator<__int64>>(Tuple &,Fun)' being compiled
+                 with
+                 [
+                     Fun=thrust::detail::advance_iterator<__int64>
+         ,            IteratorTuple=thrust::tuple<thrust::counting_iterator<unsigned int,thrust::use_default,thrust::use_default,thrust::use_default>,thrust::detail::normal_iterator<thrust::device_ptr<thrust::tuple<double,double,double,double,double,double,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>
+         ,            Tuple=thrust::tuple<thrust::counting_iterator<unsigned int,thrust::use_default,thrust::use_default,thrust::use_default>,thrust::detail::normal_iterator<thrust::device_ptr<thrust::tuple<double,double,double,double,double,double,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>
+                 ]
+                 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include\thrust/iterator/detail/zip_iterator.inl(93) : while compiling class template member function 'void thrust::zip_iterator<thrust::tuple<thrust::counting_iterator<unsigned int,thrust::use_default,thrust::use_default,thrust::use_default>,thrust::detail::normal_iterator<thrust::device_ptr<T>>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>::advance(__int64)'
+                 with
+                 [
+                     T=thrust::tuple<double,double,double,double,double,double,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>
+                 ]
+                 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include\thrust/iterator/iterator_facade.h(171) : see reference to function template instantiation 'void thrust::zip_iterator<thrust::tuple<thrust::counting_iterator<unsigned int,thrust::use_default,thrust::use_default,thrust::use_default>,thrust::detail::normal_iterator<thrust::device_ptr<T>>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>::advance(__int64)' being compiled
+                 with
+                 [
+                     T=thrust::tuple<double,double,double,double,double,double,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>
+                 ]
+                 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include\thrust/detail/for_each.inl(71) : see reference to function template instantiation 'InputIterator thrust::system::detail::sequential::for_each_n<thrust::detail::seq_t,InputIterator,Size,UnaryFunction>(thrust::system::detail::sequential::execution_policy<thrust::detail::seq_t> &,InputIterator,Size,UnaryFunction)' being compiled
+                 with
+                 [
+                     InputIterator=thrust::zip_iterator<thrust::tuple<thrust::counting_iterator<unsigned int,thrust::use_default,thrust::use_default,thrust::use_default>,thrust::detail::normal_iterator<thrust::device_ptr<thrust::tuple<double,double,double,double,double,double,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>
+         ,            Size=__int64
+         ,            UnaryFunction=thrust::detail::unary_transform_functor<randomPoint>
+                 ]
+                 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include\thrust/system/cuda/detail/for_each.inl(152) : see reference to function template instantiation 'InputIterator thrust::for_each_n<DerivedPolicy,RandomAccessIterator,Size,UnaryFunction>(const thrust::detail::execution_policy_base<DerivedPolicy> &,InputIterator,Size,UnaryFunction)' being compiled
+                 with
+                 [
+                     InputIterator=thrust::zip_iterator<thrust::tuple<thrust::counting_iterator<unsigned int,thrust::use_default,thrust::use_default,thrust::use_default>,thrust::detail::normal_iterator<thrust::device_ptr<thrust::tuple<double,double,double,double,double,double,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>
+         ,            DerivedPolicy=thrust::detail::seq_t
+         ,            RandomAccessIterator=thrust::zip_iterator<thrust::tuple<thrust::counting_iterator<unsigned int,thrust::use_default,thrust::use_default,thrust::use_default>,thrust::detail::normal_iterator<thrust::device_ptr<thrust::tuple<double,double,double,double,double,double,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>
+         ,            Size=__int64
+         ,            UnaryFunction=thrust::detail::unary_transform_functor<randomPoint>
+                 ]
+                 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include\thrust/device_reference.h(279) : while compiling class template member function 'thrust::device_reference<T>::device_reference(const thrust::device_ptr<T> &)'
+                 with
+                 [
+                     T=thrust::tuple<double,double,double,double,double,double,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>
+                 ]
+                 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include\thrust/detail/pointer.inl(72) : see reference to function template instantiation 'thrust::device_reference<T>::device_reference(const thrust::device_ptr<T> &)' being compiled
+                 with
+                 [
+                     T=thrust::tuple<double,double,double,double,double,double,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>
+                 ]
+                 C:/ROSEF/MILSET_SIM_GPU/SIM_GPU/SIM_GPU/kernel.cu(164) : see reference to class template instantiation 'thrust::device_reference<T>' being compiled
+                 with
+                 [
+                     T=thrust::tuple<double,double,double,double,double,double,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>
+                 ]
+     1>c:\rosef\milset_sim_gpu\sim_gpu\sim_gpu\kernel.cu(83): warning C4700: uninitialized local variable 'B' used
+       Link:
+         C:\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\ROSEF\MILSET_SIM_GPU\SIM_GPU\Debug\SIM_GPU.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\Win32" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\ROSEF\MILSET_SIM_GPU\SIM_GPU\Debug\SIM_GPU.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\ROSEF\MILSET_SIM_GPU\SIM_GPU\Debug\SIM_GPU.lib" /MACHINE:X86 Debug\kernel.cu.obj
+         SIM_GPU.vcxproj -> C:\ROSEF\MILSET_SIM_GPU\SIM_GPU\Debug\SIM_GPU.exe
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "C:\ROSEF\MILSET_SIM_GPU\SIM_GPU\Debug\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "C:\ROSEF\MILSET_SIM_GPU\SIM_GPU\Debug\"
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "C:\ROSEF\MILSET_SIM_GPU\SIM_GPU\Debug\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart32_75.dll
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart64_75.dll
+                 2 file(s) copied.
+     1>Done Building Project "C:\ROSEF\MILSET_SIM_GPU\SIM_GPU\SIM_GPU\SIM_GPU.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:01:04.86
